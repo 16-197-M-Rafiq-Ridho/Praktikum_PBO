@@ -1,0 +1,1 @@
+tinggi = int(input("Masukkan tinggi : "))
