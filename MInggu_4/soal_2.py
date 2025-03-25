@@ -4,10 +4,12 @@ class todo:
 
     def tambah_tugas(self, tugas):
         self.daftar_tugas.append(tugas)
+        print(f"tugas {tugas} berhasil di tambahkan!!")
 
     def remove_tugas(self, tugas):
         if tugas in self.daftar_tugas:
             self.daftar_tugas.remove(tugas)
+            print(f"Tugas {tugas} berhasil dihapus!!")
         else:
             print("Tugas tidak ditemukan!!")
 
@@ -30,7 +32,7 @@ while True:
 
         if pilihan == 1:
             tugas = str(input("Masukkan tugas: ")).lower()
-            to_do1.tambah_tugas(tugas)
+            to_do.tambah_tugas(tugas)
 
         elif pilihan == 2:
             tugas = str(input("Masukkan tugas yang ingin dihapus: ")).lower()
